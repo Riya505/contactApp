@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+            <div class="row g-3">
+                <div *ngFor="let i of contactData.data" class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+
+                    <div class="card">
+                        <img height="200px" src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.name}}</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{i.email}}</li>
+                            <li class="list-group-item">{{i.vat}}</li>
+                            <li class="list-group-item">{{i.phone}}</li>
+                            <li class="list-group-item">{{i.country}}</li>
+                            <li class="list-group-item"><a target="_blank" href="{{i.website}}">Click here for more</a> </li>
+                            <a href="#" class="btn btn-success">Go</a>
+                          </ul>
+                      </div>
+
+                </div>
+            </div>
+
+                
+            
+
+        </div>
+    </div>
+</div>
